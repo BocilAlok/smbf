@@ -788,13 +788,13 @@ def _cek_opsi_akun_cp_():
     try:
          = open(file, 'r').readlines()
     except IOError:
-        jeeck("\033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m File tidak ada :( ");exit()
+        _dapunta_cici_('%s[%s!%s] %sFile Tidak Ada :('%(_M_,_P_,_M_,_P_));exit()
 
     jeeck(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Total akun : %s"%(len()))
     for yes in :
         fl = yes.replace('\n', '')
         ya = fl.split(' • ')
-        _dapunta_cici_('%s[%s!%s] %sProses'%(_M_,_P_,_M_,_P_)) ' + fl.replace(' + ', '')
+        print '\n \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Proses :\033[0;33m ' + fl.replace(' + ', '')
         
         try:
             check_in(ya[0].replace(' + ', ''), ya[1])
