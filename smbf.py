@@ -56,8 +56,8 @@ _U_ = "\x1b[0;91m" # Ungu
 ### Logo
 _logo_line_1_ = ('%s ___  __  __ ___ ___ '%(_P_))
 _logo_line_2_ = ('%s|   \|  \/  | _ ) __| %s┌─────────────────────────┐'%(_P_,_U_))
-_logo_line_3_ = ('%s| |) | |\/| | _ \ _|  %s│   %s• Code By Dapunta •   %s│'%(_P_,_U_,_P_,_U_))
-_logo_line_4_ = ('%s|___/|_|  |_|___/_|   %s│ %sGithub.com/Dapunta/dmbf %s│'%(_P_,_U_,_P_,_U_))
+_logo_line_3_ = ('%s| |) | |\/| | _ \ _|  %s│   %s• Code By Sanz •        %s│'%(_P_,_U_,_P_,_U_))
+_logo_line_4_ = ('%s|___/|_|  |_|___/_|   %s│ %sGithub.com/BocilAlok/smbf %s│'%(_P_,_U_,_P_,_U_))
 _logo_line_5_ = ('%s XNSCODE Team 2021    └─────────────────────────┘'%(_U_))
 def _my_logo_():
     _dapunta_cici_(_logo_line_1_)
@@ -72,7 +72,7 @@ ua_nokia   = 'nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 moz
 ua_asus    = 'Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 ua_huawei  = 'Mozilla/5.0 (Linux; Android 8.1.0; HUAWEI Y7 PRIME 2019 Build/5887208) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 ua_vivo    = 'Mozilla/5.0 (Linux; Android 11; vivo 1918) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
-ua_oppo    = 'Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
+ua_oppo    = 'Mozilla/5.0 (Linux; Android 6.0.1; oppo A5-2020 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/268.1.0.54.121;]'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 4.4.4; SC-01G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36'
 ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 
@@ -673,7 +673,7 @@ def _check_recode_(_oscylopsce_,_ascylapsci_,_escylipsce_):
 
 ### Menu User Agent
 def _default_ua_(_Cici_Cantik_Banget_):
-    ua = ua_samsung
+    ua = ua_oppo
     try:
         ugent = _dapunta_dapunta_('ugent.txt','w')
         ugent.write(ua)
