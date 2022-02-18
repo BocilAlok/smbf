@@ -782,14 +782,12 @@ def _cek_opsi_akun_cp_():
     _dapunta_cici_('%s[%s•%s] %sMasukan file Contoh : \033[0;00mCP/%s.txt\n'%(_U_,_P_,_U_,_P_))
     file = raw_input('%s[%s•%s] %sNama File :\n'%(_U_,_P_,_U_,_P_))
     if file == '':
-        _dapunta_cici_('%s[%s•%s] %sWronk Input\n'%(_U_,_P_,_U_,_P_))
-          _cici_cici_()
+        _dapunta_cici_('%s[%s•%s] %sWronk Input\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
     
     try:
         self = open(file, 'r').readlines()
     except IOError:
-        _dapunta_cici_('%s[%s•%s] %sFile Tidak Ada :(\n'%(_U_,_P_,_U_,_P_))
-          _cici_cici_()
+        _dapunta_cici_('%s[%s•%s] %sFile Tidak Ada :(\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
 
     _dapunta_cici_('\n%s[%s•%s] %sTotal Akun %s Adalah %s Akun'%(len(self)))
     for yes in self:
@@ -801,14 +799,12 @@ def _cek_opsi_akun_cp_():
             check_in(ya[0].replace(' + ', ''), ya[1])
    #     continue
         except requests.exceptions.ConnectionError:
-            _dapunta_cici_('%s[%s•%s] %sKoneksi Jelek !!!\n'%(_U_,_P_,_U_,_P_))
-            _cici_cici_()
+            _dapunta_cici_('%s[%s•%s] %sKoneksi Jelek !!!\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
             continue
         
 
     
-    _dapunta_cici_('%s[%s•%s] %sSelesai\n'%(_U_,_P_,_U_,_P_))
-    _cici_cici_()
+    _dapunta_cici_('%s[%s•%s] %sSelesai\n'%(_U_,_P_,_U_,_P_)) _cici_cici_()
 
 
 def check_in(user, pasw):
