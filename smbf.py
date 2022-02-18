@@ -877,8 +877,10 @@ def check_in(user, pasw):
             'nh': nh }
         parr = parser(ses.post(mb + form['action'], data = dataD).text, 'html.parser')
         proo = [ yy.text for yy in parr.find_all('option') ]
-        _dapunta_cici_('%s[%s!%s] %sTerdapat'%(_M_,_P_,_M_,_P_)) + str(len(proo)) + '%sOpsi'%(_M_,_P_,_M_,_P_))
+        print ' \033[0;36m[\033[0;35m+\033[0;36m]\033[0;33m Terdapat\033[0;00m ' + str(len(proo)) + '\033[0;33m Opsi'
+
         for opt in range(len(proo)):
+
             print '  \033[0;33m[\033[0;35m' + str(opt + 1) + '\033[0;33m]\033[0;36m ' + proo[opt]
         
     elif 'login_error' in str(run):
