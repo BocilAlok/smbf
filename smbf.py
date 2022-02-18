@@ -431,7 +431,7 @@ def koki(cookies):
 
 ### Crack Proccess
 class _crack_dev_:
-    def __init__(,_files_dapunta_):
+    def __init__(self,_files_dapunta_):
         ._Dapunta_Sayang_Cici_ = '__My_Love__'+_oscylopsce_+_escylipsce_+_ascylapsci_+'__Forever__'
         ._ok_dapunta_ = []
         ._cp_dapunta_ = []
