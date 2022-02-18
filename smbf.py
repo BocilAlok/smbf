@@ -38,8 +38,10 @@ __bulan__ = __sekarang__.month
 __hari__  = __sekarang__.day
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 _list_bulan_ = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-t_cici_cici_()
-    _bulan_sekarang_ = __bulan__ 
+try:
+    if __bulan__ < 0 or __bulan__ > 12:
+        _cici_cici_()
+    _bulan_sekarang_ = __bulan__ - 1
 except ValueError:
     _cici_cici_()
 _bulan_ = _list_bulan_[_bulan_sekarang_]
